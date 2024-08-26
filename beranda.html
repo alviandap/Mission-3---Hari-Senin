@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videobelajar</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha384-R8/J3F6AFME2OgkI4ARl7CkgUZoKAtC2mKTIGPbhflUO/Cr3cF8s+LmkShLBnl/9" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom Styles */
+        .header, .footer {
+            background-color: #f8f9fa;
+        }
+        .banner {
+            background: url('banner-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .section-collections {
+            padding: 20px;
+        }
+        .section-collections .menu {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .section-collections .menu a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .cta-form {
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .cta-form input {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        .cta-form button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+
+<style>
+    /* Custom Styles */
+    .banner {
+        background: url('banner-image.jpg') no-repeat center center/cover;
+        height: 400px;
+        width: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        text-align: center;
+        margin: 100px;
+        position: relative;
+        border-color: #000000;
+    }
+    .banner h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .banner p {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+    .banner button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #28a745;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+    }
+    .banner button:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header flex justify-between items-center p-4 bg-gray-800 text-white">
+        <div class="logo flex items-center">
+            <img src="../public/Subtract.png" alt="Videobelajar Logo" class="h-12">
+        </div>
+        <div class="profile flex items-center">
+            <h1 class="mr-3 text-black">Kategori</h1>
+            <img src="avatar.png" alt="Profile Avatar" class="h-10 w-10 rounded-full border border-gray-300">
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner w-96 p-6 shadow-lg bg-white rounded-md">
+        <h1>Revolusi Pembelajaran: Temukan Ilmu Baru melalui Platform Video Interaktif!</h1>
+        <p>Temukan ilmu baru yang menarik dan mendalam melalui koleksi video pembelajaran berkualitas tinggi. Tidak hanya itu, Anda juga dapat berpartisipasi dalam latihan interaktif yang akan meningkatkan pemahaman Anda.</p>
+        <button>Temukan Video Course untuk Dipelajari!</button>
+    </section>
+
+    <!-- Main Content -->
+    <main class="section-collections">
+        <!-- Featured Videos Section -->
+        <section>
+            <div class="menu">
+                <a href="#">Semua Kelas</a>
+                <a href="#">Pemasaran</a>
+                <a href="#">Desain</a>
+                <a href="#">Pengembangan Diri</a>
+                <a href="#">Bisnis</a>
+            </div>
+            <h2 class="text-2xl font-bold mb-4">Koleksi Video Pembelajaran Unggulan</h2>
+            <!-- Add featured videos here -->
+        </section>
+
+        <!-- Call to Action Form -->
+        <section class="cta-form">
+            <h2 class="text-xl font-bold mb-4">Dapatkan Newsletter dari Kami!</h2>
+            <p class="mb-4">Masukkan email Anda di bawah ini untuk mendapatkan berita terbaru dan penawaran eksklusif.</p>
+            <form action="submit-email.php" method="post">
+                <input type="email" name="email" placeholder="Masukkan email Anda" required>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Videobelajar. Semua Hak Dilindungi.</p>
+        <div>
+            <a href="#">Kategori Video</a>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kontak</a>
+        </div>
+        <div class="social-media mt-2">
+            <a href="#" class="text-blue-600"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-blue-400 ml-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-red-600 ml-3"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
